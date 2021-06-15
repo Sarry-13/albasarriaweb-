@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+
+.logo-nav{
+    font-family: 'Ubuntu', sans-serif;
+    display: none;
+    width: 275px;
+    color: white;
+    font-size: 30px;
+    overflow: hidden;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 4vw;
+    padding-top: 20px;
+    font-style: italic;
+}
+.w{
+    opacity: 1;
+    transition: 0.15s ease-out 1s;
+    -webkit-transition: 0.15s ease-out 1s;
+    -moz-transition: 0.15s ease-out 1s;
+    -ms-transition: 0.15s ease-out 1s;
+    -o-transition: 0.15s ease-out 1s;
+    position: relative;
+    left: -9px;
+    bottom: 0px;
+}
+.lba{
+    opacity: 0;
+    transition: opacity 0.5s 0.5s, left 1s 0.5s;
+    -webkit-transition: opacity 0.5s 0.5s, left 1s 0.5s;
+    -moz-transition: opacity 0.5s 0.5s, left 1s 0.5s;
+    -ms-transition: opacity 0.5s 0.5s, left 1s 0.5s;
+    -o-transition: opacity 0.5s 0.5s, left 1s 0.5s;
+    position: relative;
+    left: 0px;
+
+}
+.web{
+    position: relative;
+    font-size: 15px;
+    bottom: -50px;
+    left: -45px;
+    transition: 2s ease-out;
+    font-weight: 300;
+    -webkit-transition: 2s ease-out;
+    -moz-transition: 2s ease-out;
+    -ms-transition: 2s ease-out;
+    -o-transition: 2s ease-out;
+}
+
+.logo-nav:hover .lba{
+    opacity: 1;
+    left: -43px;
+    transition: opacity 0.5s 0.5s, left 1s 0.5s;
+    -webkit-transition: opacity 0.5s 0.5s, left 1s 0.5s;
+    -moz-transition: opacity 0.5s 0.5s, left 1s 0.5s;
+    -ms-transition: opacity 0.5s 0.5s, left 1s 0.5s;
+    -o-transition: opacity 0.5s 0.5s, left 1s 0.5s;
+}
+
+.logo-nav:hover .w{
+    opacity: 0;
+    bottom: 30px;
+    transition: 0.15s ease-out;
+    -webkit-transition: 0.15s ease-out;
+    -moz-transition: 0.15s ease-out;
+    -ms-transition: 0.15s ease-out;
+    -o-transition: 0.15s ease-out;
+}
+.logo-nav:hover .web{
+    bottom: 0px;
+    transition: 2s ease-out 0.5s;
+    -webkit-transition: 2s ease-out 0.5s;
+    -moz-transition: 2s ease-out 0.5s;
+    -ms-transition: 2s ease-out 0.5s;
+    -o-transition: 2s ease-out 0.5s;
+}
+a{
+    text-decoration: none;
+}
+
+/* On screens that are 1440px or less */
+@media screen and (max-width: 1440px) {
+    .logo-nav{
+      width: 55px;
+    }
+    .logo-nav:hover .lba{
+        opacity: 0;
+        left: 0px;
+
+    }
+    .logo-nav:hover .w{
+        opacity: 1;
+        bottom: 0px;
+
+    }
+
+}
